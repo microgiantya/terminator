@@ -1,0 +1,56 @@
+[global_config]
+  dbus = False
+  focus = mouse
+  handle_size = 6
+  window_state = hidden
+  broadcast_default = off
+  scroll_tabbar = True
+  use_custom_url_handler = True
+  custom_url_handler = /usr/bin/firefox -P cmft
+  inactive_color_offset = 0.9027777777777778
+  enabled_plugins = CustomCommandsMenu, TerminalShot, Logger, InsertTermName, ActivityWatch, InactivityWatch, MavenPluginURLHandler, LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler, RunCmdOnMatchMenu, TestPlugin, CurrDirOpen
+  suppress_multiple_term_dialog = True
+  always_split_with_profile = True
+[keybindings]
+  cycle_next = <Primary>F3
+  cycle_prev = <Primary>F4
+  hide_window = <Alt>F10
+[profiles]
+  [[default]]
+    background_color = "#0e064c"
+    background_darkness = 0.9
+    background_type = transparent
+    scrollback_infinite = True
+    palette = "#2e3436:#cc0000:#4e9a06:#c4a000:#204a87:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
+  [[transparent]]
+    icon_bell = False
+    background_color = "#ffffff"
+    background_darkness = 0.85
+    background_type = transparent
+    cursor_fg_color = "#0e064c"
+    cursor_bg_color = "#aaaaaa"
+    cursor_color_default = False
+    foreground_color = "#000000"
+    show_titlebar = False
+    scrollback_infinite = True
+    word_chars = "-./?%&#_"
+[layouts]
+  [[default]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 1000:1000
+      maximised = False
+      fullscreen = False
+      size = 1920, 1080
+      title = ea@legend-vpn: ~
+      last_active_term = 2189ee35-1ed0-4ad5-bd2b-c68adeee56d8
+      last_active_window = True
+    [[[terminal1]]]
+      type = Terminal
+      parent = child0
+      order = 0
+      profile = transparent
+      uuid = 2189ee35-1ed0-4ad5-bd2b-c68adeee56d8
+[plugins]
